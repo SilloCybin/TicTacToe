@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/newgame2"
+        android:title="New Game"></item>
+        <!--android:icon="@drawable/new_game" />-->
+    <item android:id="@+id/clear_score"
+        android:title="Clear Score"></item>
+        <!--android:icon="@drawable/clear_score" />-->
+    <item android:id="@+id/settings"
+        android:title="Settings"></item>
+        <!--android:icon="@drawable/settings"  />-->
+    <item android:id="@+id/quit"
+        android:title="Quit"></item>
+        <!--android:icon="@drawable/quit_game" />-->
+</menu>

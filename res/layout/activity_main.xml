@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="388dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginRight="114dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="107dp"
+        android:gravity="center"
+        android:text="@string/tictactoe"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/click_to_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="83dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/click_to_play_online"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="134dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginRight="125dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/tictactoegrid" />
+
+</android.support.constraint.ConstraintLayout>

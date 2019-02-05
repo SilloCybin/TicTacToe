@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cedricdevries.tictactoerecoveryapp">
+
+    <application
+        android:icon="@drawable/tictactoegrid"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar">
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+
+            <intent-filter android:order="1">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="example.com"
+                    android:pathPattern="/.*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TicTacToeActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".SignInActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".FindPlayerActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".Settings"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".OnlineTicTacToeActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".NotificationResponse"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.example.cedricdevries.tictactoerecoveryapp.TARGETNOTIFICATION"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+    </application>
+</manifest>
