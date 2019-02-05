@@ -1,5 +1,6 @@
 # TicTacToe
 TicTacToe game Android app
+
 Features:
   - Simple TicTacToe game against your smartphone in offline mode. 3 difficulty settings.
   - Challenge other players in online mode. Firebase database handling:
